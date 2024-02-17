@@ -31,6 +31,7 @@ function App() {
        e.preventDefault();
      if(emailValid && passwordValid && confirmPasswordValid) {
       alert('Form Submited Successfully!');
+      e.target.reset();
       setEmail("");
       setEmailValid(false);
       setPassword("");
